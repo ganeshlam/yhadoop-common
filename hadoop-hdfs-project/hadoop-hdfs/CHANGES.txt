@@ -1,5 +1,17 @@
 Hadoop HDFS Change Log
 
+Release 0.23.7 - UNRELEASED
+
+  INCOMPATIBLE CHANGES
+
+  NEW FEATURES
+
+  IMPROVEMENTS
+
+  OPTIMIZATIONS
+
+  BUG FIXES
+
 Release 0.23.6 - UNRELEASED
 
   INCOMPATIBLE CHANGES
@@ -36,7 +48,11 @@ Release 0.23.6 - UNRELEASED
     HDFS-2757. Cannot read a local block that's being written to when
     using the local read short circuit. (Jean-Daniel Cryans via eli)
 
-Release 0.23.5 - UNRELEASED
+    HDFS-4385. Maven RAT plugin is not checking all source files (tgraves)
+
+    HDFS-4399. precommit release audit warnings (tgraves)
+
+Release 0.23.5 - 2012-11-28
 
   INCOMPATIBLE CHANGES
 
