@@ -440,6 +440,12 @@
 </property>
 
 <property>
+  <name>fs.du.interval</name>
+  <value>60000</value>
+  <description>File space usage statistics refresh interval in msec.</description>
+</property>
+
+<property>
   <name>fs.s3.block.size</name>
   <value>67108864</value>
   <description>Block size to use when writing files to S3.</description>
@@ -890,7 +896,6 @@
   <value>${user.home}/hadoop-http-auth-signature-secret</value>
   <description>
     The signature secret for signing the authentication tokens.
-    If not set a random secret is generated at startup time.
     The same secret should be used for JT/NN/DN/TT configurations.
   </description>
 </property>
