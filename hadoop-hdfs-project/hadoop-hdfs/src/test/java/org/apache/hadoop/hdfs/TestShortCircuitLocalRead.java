@@ -191,8 +191,7 @@ public class TestShortCircuitLocalRead {
       assertTrue("RemoteBlockReader unsupported method read(ByteBuffer bf) error",
           checkUnsupportedMethod(fs, file1, fileData, readOffset));
     } catch(IOException e) {
-      Assert.fail("doTestShortCircuitReadWithRemoteBlockReader ex error " 
-          + e.getMessage());
+      throw new IOException("doTestShortCircuitReadWithRemoteBlockReader ex error ", e);
     } finally {
       fs.close();
       cluster.shutdown();
