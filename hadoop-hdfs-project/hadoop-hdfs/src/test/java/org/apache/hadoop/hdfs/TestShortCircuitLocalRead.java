@@ -219,7 +219,7 @@ public class TestShortCircuitLocalRead {
     stm.write(fileData);
     stm.close();
     try {
-      checkFileContent(fs.getUri(), file1, fileData, readOffset, "alloweduser1", conf,
+      checkFileContent(fs.getUri(), file1, fileData, readOffset, "alloweduser2", conf,
                 false);
       //RemoteBlockReader have unsupported method read(ByteBuffer bf)
       assertTrue("RemoteBlockReader unsupported method read(ByteBuffer bf) error",
